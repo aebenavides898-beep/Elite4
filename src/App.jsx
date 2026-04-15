@@ -7,6 +7,7 @@ import RandomizerEvent from './components/RandomizerEvent'
 import BuffPicker from './components/BuffPicker'
 import WinScreen from './components/WinScreen'
 import GameOver from './components/GameOver'
+import GlitchTransition from './components/GlitchTransition'
 
 const SCREENS = {
   title: TitleScreen,
@@ -16,6 +17,7 @@ const SCREENS = {
   buffpick: BuffPicker,
   win: WinScreen,
   gameover: GameOver,
+  glitch: GlitchTransition,
 }
 
 export default function App() {

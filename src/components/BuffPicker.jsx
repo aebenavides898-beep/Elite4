@@ -27,9 +27,10 @@ export default function BuffPicker() {
     setChosen(buff.id)
     applyBuff(buff)
     setTimeout(() => {
+      const nextBattle = useGameStore.getState().currentBattle + 1
       advanceBattle()
       useGameStore.setState({ extraBuffSlot: false })
-      setPhase('battle')
+      setPhase(nextBattle === 4 ? 'glitch' : 'battle')
     }, 1200)
   }
 
